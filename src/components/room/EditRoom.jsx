@@ -60,8 +60,8 @@ const EditRoom = () => {
 	}
 
 	return (
-		<div className="container mt-5 mb-5">
-			<h3 className="text-center mb-5 mt-5">Edit Room</h3>
+		<div className="container login-margin">
+			<h3 className="text-center">Edit Room</h3>
 			<div className="row justify-content-center">
 				<div className="col-md-8 col-lg-6">
 					{successMessage && (
@@ -118,12 +118,12 @@ const EditRoom = () => {
 								<img
 									src={`data:image/jpeg;base64,${imagePreview}`}
 									alt="Room preview"
-									style={{ maxWidth: "400px", maxHeight: "400" }}
-									className="mt-3"
+									style={{ maxWidth: "200px", maxHeight: "200" }}
+									className="mt-1"
 								/>
 							)}
 						</div>
-						<div className="d-grid gap-2 d-md-flex mt-2">
+						<div className="d-md-flex">
 							<Link to={"/existing-rooms"} className="btn btn-outline-info ml-5">
 								back
 							</Link>

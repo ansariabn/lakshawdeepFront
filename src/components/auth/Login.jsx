@@ -36,11 +36,15 @@ const Login = () => {
 	}
 
 	return (
-		<section className="container col-6 mt-5 mb-5">
-			{errorMessage && <p className="alert alert-danger">{errorMessage}</p>}
+		<div className="
+		">
+
+		
+		<section className="container col-6 login-margin">
+			{errorMessage && <p className="alert alert-danger login-message">{errorMessage}</p>}
 			<h2>Login</h2>
 			<form onSubmit={handleSubmit}>
-				<div className="row mb-3">
+				<div className="row mb-3 ">
 					<label htmlFor="email" className="col-sm-2 col-form-label">
 						Email
 					</label>
@@ -49,6 +53,7 @@ const Login = () => {
 							id="email"
 							name="email"
 							type="email"
+							placeholder="Enter your Email"
 							className="form-control"
 							value={login.email}
 							onChange={handleInputChange}
@@ -65,6 +70,8 @@ const Login = () => {
 							id="password"
 							name="password"
 							type="password"
+							placeholder="Enter your password"
+							
 							className="form-control"
 							value={login.password}
 							onChange={handleInputChange}
@@ -82,6 +89,7 @@ const Login = () => {
 				</div>
 			</form>
 		</section>
+		</div>
 	)
 }
 

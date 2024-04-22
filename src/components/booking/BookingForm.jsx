@@ -97,14 +97,14 @@ const currentUser = localStorage.getItem("userId")
 
 	return (
 		<>
-			<div className="container mb-5">
+			<div>
 				<div className="row">
-					<div className="col-md-6">
-						<div className="card card-body mt-5">
-							<h4 className="card-title">Reserve Room</h4>
+					<div className="col-md-6 ">
+						<div className="card card-body shadow">
+							<h4 className="card-title input-field">Reserve Room</h4>
 
 							<Form noValidate validated={validated} onSubmit={handleSubmit}>
-								<Form.Group>
+								<Form.Group className="input-field">
 									<Form.Label htmlFor="guestFullName" className="hotel-color">
 										Fullname
 									</Form.Label>
@@ -122,7 +122,7 @@ const currentUser = localStorage.getItem("userId")
 									</Form.Control.Feedback>
 								</Form.Group>
 
-								<Form.Group>
+								<Form.Group  className="input-field">
 									<Form.Label htmlFor="guestEmail" className="hotel-color">
 										Email
 									</Form.Label>
@@ -141,7 +141,7 @@ const currentUser = localStorage.getItem("userId")
 									</Form.Control.Feedback>
 								</Form.Group>
 
-								<fieldset style={{ border: "2px" }}>
+								<fieldset style={{ border: "2px" }}  className="input-field">
 									<legend>Lodging Period</legend>
 									<div className="row">
 										<div className="col-6">
@@ -185,7 +185,7 @@ const currentUser = localStorage.getItem("userId")
 									</div>
 								</fieldset>
 
-								<fieldset style={{ border: "2px" }}>
+								<fieldset style={{ border: "2px" }}  className="input-field">
 									<legend>Number of Guest</legend>
 									<div className="row">
 										<div className="col-6">
@@ -227,7 +227,7 @@ const currentUser = localStorage.getItem("userId")
 									</div>
 								</fieldset>
 
-								<div className="fom-group mt-2 mb-2">
+								<div className="fom-group mt-3 mb-2">
 									<button type="submit" className="btn btn-hotel">
 										Continue
 									</button>
@@ -236,7 +236,7 @@ const currentUser = localStorage.getItem("userId")
 						</div>
 					</div>
 
-					<div className="col-md-4">
+					<div className="col-md-6">
 						{isSubmitted && (
 							<BookingSummary
 								booking={booking}
@@ -247,7 +247,7 @@ const currentUser = localStorage.getItem("userId")
 						)}
 					</div>
 				</div>
-			</div>
+				</div>
 		</>
 	)
 }

@@ -29,8 +29,8 @@ const RoomCarousel = () => {
 	}
 
 	return (
-		<section className="bg-light mb-5 mt-5 shadow">
-			<Link to={"/browse-all-rooms"} className="hote-color text-center btn btn-primary mb-5">
+		<section className="bg-light mb-5 mt-1 shadow border-radius">
+			<Link to={"/browse-all-rooms"} className="hote-color text-center btn btn-success mb-5">
 				Browse all rooms
 			</Link>
 

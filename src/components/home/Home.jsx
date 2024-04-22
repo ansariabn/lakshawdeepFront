@@ -20,10 +20,11 @@ const Home = () => {
 			<MainHeader />
 			<div className="container">
 				<RoomSearch />
+				<HotelService />
 				<RoomCarousel />
 				<Parallax />
 				<RoomCarousel />
-				<HotelService />
+				
 				<Parallax />
 				<RoomCarousel />
 			</div>

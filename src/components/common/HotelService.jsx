@@ -14,12 +14,12 @@ import {
 const HotelService = () => {
 	return (
 		<>
-			<div className="mb-2">
+			<div className="mb-2 ">
 				<Header title={"Our Services"} />
 
 				<Row className="mt-4">
 					<h4 className="text-center">
-						Services at <span className="hotel-color"> Lakshadweep - </span>Hotel
+						Services at <span className="hotel-color"> Bookyour- </span>Hotel
 						<span className="gap-2">
 							<FaClock className="ml-5" /> 24-Hour Front Desk
 						</span>
@@ -27,11 +27,11 @@ const HotelService = () => {
 				</Row>
 				<hr />
 
-				<Row xs={1} md={2} lg={3} className="g-4 mt-2">
+				<Row xs={1} md={2} lg={3} className="g-4 mt-4">
 					<Col>
 						<Card>
 							<Card.Body>
-								<Card.Title className="hotel-color">
+								<Card.Title className="hotel-color ">
 									<FaWifi /> WiFi
 								</Card.Title>
 								<Card.Text>Stay connected with high-speed internet access.</Card.Text>
@@ -52,9 +52,9 @@ const HotelService = () => {
 						<Card>
 							<Card.Body>
 								<Card.Title className="hotel-color">
-									<FaTshirt /> Laundry
+									<FaParking /> Parking
 								</Card.Title>
-								<Card.Text>Keep your clothes clean and fresh with our laundry service.</Card.Text>
+								<Card.Text>Park your car conveniently in our on-site parking lot.</Card.Text>
 							</Card.Body>
 						</Card>
 					</Col>
@@ -72,12 +72,13 @@ const HotelService = () => {
 						<Card>
 							<Card.Body>
 								<Card.Title className="hotel-color">
-									<FaParking /> Parking
+									<FaTshirt /> Laundry
 								</Card.Title>
-								<Card.Text>Park your car conveniently in our on-site parking lot.</Card.Text>
+								<Card.Text>Keep your clothes clean and fresh with our laundry service.</Card.Text>
 							</Card.Body>
 						</Card>
 					</Col>
+					
 					<Col>
 						<Card>
 							<Card.Body>

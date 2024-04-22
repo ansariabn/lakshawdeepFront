@@ -32,10 +32,12 @@ const Profile = () => {
 		const fetchUser = async () => {
 			try {
 				const userData = await getUser(userId, token)
-				console.log(userData)
 				setUser(userData)
+				console.log(userData)
+				
 			} catch (error) {
-				console.error(error)
+				// console.error(error)
+				setErrorMessage(error.message);
 			}
 		}
 
@@ -47,7 +49,7 @@ const Profile = () => {
 			try {
 				const response = await getBookingsByUserId(userId, token)
 				setBookings(response)
-				console.log(response)
+				console.log(response, "My bookings")
 			} catch (error) {
 				console.error("Error fetching bookings:", error.message)
 				setErrorMessage(error.message)

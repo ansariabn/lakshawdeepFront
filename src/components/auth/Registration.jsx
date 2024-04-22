@@ -37,9 +37,9 @@ const Registration = () => {
 	}
 
 	return (
-		<section className="container col-6 mt-5 mb-5">
-			{errorMessage && <p className="alert alert-danger">{errorMessage}</p>}
-			{successMessage && <p className="alert alert-success">{successMessage}</p>}
+		<section className="container col-6 login-margin">
+			{errorMessage && <p className="alert alert-danger login-message">{errorMessage}</p>}
+			{successMessage && <p className="alert alert-success login-message">{successMessage}</p>}
 
 			<h2>Register</h2>
 			<form onSubmit={handleRegistration}>
@@ -52,6 +52,7 @@ const Registration = () => {
 							id="firstName"
 							name="firstName"
 							type="text"
+							placeholder="Enter Your First Name"
 							className="form-control"
 							value={registration.firstName}
 							onChange={handleInputChange}
@@ -67,6 +68,7 @@ const Registration = () => {
 						<input
 							id="lastName"
 							name="lastName"
+							placeholder="Enter Your Last Name "
 							type="text"
 							className="form-control"
 							value={registration.lastName}
@@ -84,6 +86,7 @@ const Registration = () => {
 							id="email"
 							name="email"
 							type="email"
+							placeholder="Enter Your Email Address"
 							className="form-control"
 							value={registration.email}
 							onChange={handleInputChange}
@@ -100,6 +103,7 @@ const Registration = () => {
 							type="password"
 							className="form-control"
 							id="password"
+							placeholder="Enter Your Password"
 							name="password"
 							value={registration.password}
 							onChange={handleInputChange}

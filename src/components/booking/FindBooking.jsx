@@ -78,8 +78,8 @@ const FindBooking = () => {
 	}
 
 	return (
-		<>
-			<div className="container mt-5 d-flex flex-column justify-content-center align-items-center">
+		<div style={{marginTop:"12rem"}}>
+			<div className="container d-flex flex-column justify-content-center align-items-center">
 				<h2 className="text-center mb-4">Find My Booking</h2>
 				<form onSubmit={handleFormSubmit} className="col-md-6">
 					<div className="input-group mb-3">
@@ -137,7 +137,7 @@ const FindBooking = () => {
 
 				{isDeleted && <div className="alert alert-success mt-3 fade show">{successMessage}</div>}
 			</div>
-		</>
+		</div>
 	)
 }
 

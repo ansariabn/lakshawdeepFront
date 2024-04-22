@@ -41,15 +41,15 @@ const Checkout = () => {
 
 	return (
 		<div>
-			<section className="container">
+			<section className="container room">
 				<div className="row">
-					<div className="col-md-4 mt-5 mb-5">
+					<div className="col-md-4 mb-2 bordar-radius">
 						{isLoading ? (
 							<p>Loading room information...</p>
 						) : error ? (
 							<p>{error}</p>
 						) : (
-							<div className="room-info">
+							<div className="room-info shadow">
 								<img
 									src={`data:image/png;base64,${roomInfo.photo}`}
 									alt="Room photo"
@@ -98,7 +98,7 @@ const Checkout = () => {
 							</div>
 						)}
 					</div>
-					<div className="col-md-8">
+					<div className="col-md-8 ">
 						<BookingForm />
 					</div>
 				</div>

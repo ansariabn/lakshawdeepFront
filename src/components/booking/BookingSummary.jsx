@@ -27,27 +27,27 @@ const BookingSummary = ({ booking, payment, isFormValid, onConfirm }) => {
 	}, [isBookingConfirmed, navigate])
 
 	return (
-		<div className="row">
-			<div className="col-md-6"></div>
-			<div className="card card-body mt-5">
-				<h4 className="card-title hotel-color">Reservation Summary</h4>
-				<p>
+		<div className="row shadow">
+			<div className="col-md-6 "></div>
+			<div className="card card-body">
+				<h4 className="card-title hotel-color input-field">Reservation Summary</h4>
+				<p className="input-field">
 					Name: <strong>{booking.guestFullName}</strong>
 				</p>
-				<p>
+				<p className="input-field">
 					Email: <strong>{booking.guestEmail}</strong>
 				</p>
-				<p>
+				<p className="input-field">
 					Check-in Date: <strong>{moment(booking.checkInDate).format("MMM Do YYYY")}</strong>
 				</p>
-				<p>
+				<p className="input-field">
 					Check-out Date: <strong>{moment(booking.checkOutDate).format("MMM Do YYYY")}</strong>
 				</p>
-				<p>
+				<p className="input-field">
 					Number of Days Booked: <strong>{numberOfDays}</strong>
 				</p>
 
-				<div>
+				<div className="input-field">
 					<h5 className="hotel-color">Number of Guest</h5>
 					<strong>
 						Adult{booking.numOfAdults > 1 ? "s" : ""} : {booking.numOfAdults}
@@ -59,8 +59,8 @@ const BookingSummary = ({ booking, payment, isFormValid, onConfirm }) => {
 
 				{payment > 0 ? (
 					<>
-						<p>
-							Total payment: <strong>${payment}</strong>
+						<p className="input-field">
+							Total payment: <strong>₹{payment}</strong>
 						</p>
 
 						{isFormValid && !isBookingConfirmed ? (
@@ -86,7 +86,7 @@ const BookingSummary = ({ booking, payment, isFormValid, onConfirm }) => {
 						) : null}
 					</>
 				) : (
-					<p className="text-danger">Check-out date must be after check-in date.</p>
+					<p className="text-danger input-field">Check-out date must be after check-in date.</p>
 				)}
 			</div>
 		</div>

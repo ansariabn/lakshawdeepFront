@@ -49,7 +49,7 @@ const Room = () => {
 
 	return (
 		<Container>
-			<Row>
+			<Row className="room"> 
 				<Col md={6} className="mb-3 mb-md-0">
 					<RoomFilter data={data} setFilteredData={setFilteredData} />
 				</Col>
