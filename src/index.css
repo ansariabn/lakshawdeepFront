@@ -282,7 +282,10 @@ html {
 }
 
 body {
-    background: var(--body);
+    background-color: #FA8BFF;
+    background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    
+    
 }
 
 .main-header {
@@ -297,6 +300,9 @@ body {
     align-items: center;
     padding: .8rem 5%;
     z-index: 1000;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    
 }
 
 .main-header .logo {
